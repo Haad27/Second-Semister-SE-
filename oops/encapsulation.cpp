@@ -3,27 +3,29 @@
 #include <vector>
 
 using namespace std;
-class employee{
+class employee
+{
 
-    private:
-      int salary = 90;
+private:
+    int salary = 90;
 
-    public:
-    void getsalary(){
+public:
+    void getsalary()
+    {
 
         cout << salary;
     }
-    int setsalary(){
+    int setsalary()
+    {
         cin >> salary;
         return salary;
     }
 };
 
-int main() {
-  employee emp;
- cout << emp.setsalary();
-  emp.getsalary();
+int main()
+{
+    employee emp;
+    cout << emp.setsalary();
 
-  
     return 0;
 }
