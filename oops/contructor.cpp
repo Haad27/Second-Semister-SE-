@@ -4,20 +4,19 @@
 
 using namespace std;
 
-class name
+class myclass
 {
-
 public:
-    string name;
-    int age;
+//constructor
+    myclass()
+    {
+        cout << "hello world\n";
+    }
 };
-
 int main()
 {
 
-    name obj;
-    obj.name = "haad ";
-    cout << obj.name;
+    myclass myobj;
 
     return 0;
 }
