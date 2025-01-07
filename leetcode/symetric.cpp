@@ -1,57 +1,58 @@
 #include <iostream>
-#include <string>
-#include <vector>
-
 using namespace std;
-int final[1000];
-class Solution
-{
+
+class Solution {
 public:
-    int countSymmetricIntegers(int low, int high)
-    {
-        int y;
-        int arr[1000];
-        for (int i = low, y = 0; i < high; y++, i++)
-
-        {
-            arr[y] = i;
+    bool isSymmetric(int num) {
+        // Convert to string
+        string s = to_string(num);
+        
+        // If odd length, return false
+        if(s.length() % 2 != 0) {
+            return false;
         }
-        int temp = high;
+        
+        // Get middle point
+        int mid = s.length() / 2;
+        
+        // First half sum
+        int sum1 = 0;
+        for(int i = 0; i < mid; i++) {
+            sum1 += s[i] - '0';
+        }
+        
+        // Second half sum
+        int sum2 = 0;
+        for(int i = mid; i < s.length(); i++) {
+            sum2 += s[i] - '0';
+        }
+        
+        return sum1 == sum2;
+    }
+    
+    int countSymmetricIntegers(int low, int high) {
         int count = 0;
-        while (temp > 0)
-        {
-            int digit = temp % 10;
-
-            temp = temp / 10;
-            count++;
-        }
-
-        if (count % 2 == 0)
-        {
-            int sum1, sum2;
-            for (int i = 0; i < count / 2; i++)
-            {
-                sum1 = sum1 + arr[i];
+        
+        // Check each number
+        for(int i = low; i <= high; i++) {
+            if(isSymmetric(i)) {
+                count++;
             }
-            for (int i = count / 2; i < count; i++)
-            {
-                sum2 = sum2 + arr[i];
-            }
-
-            if (sum1==sum2)
-            {
-                cout << "symetric";
-            }
-            
         }
-        else if (count % 2 == 1)
-        {
-            cout << "not exsist\n";
-        }
+        
+        return count;
     }
 };
-int main()
-{
 
+int main() {
+    Solution s;
+    
+    // Test cases
+    cout << "Test 1 (1 to 100): " << s.countSymmetricIntegers(1, 100) << endl;
+    // Should print 9 (11,22,33,44,55,66,77,88,99)
+    
+    cout << "Test 2 (1200 to 1230): " << s.countSymmetricIntegers(1200, 1230) << endl;
+    // Should print 4 (1203,1212,1221,1230)
+    
     return 0;
 }
