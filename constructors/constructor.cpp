@@ -35,11 +35,13 @@ private:
 public:
     student(string n, int roll, float m1, float m2, float m3)
     {
+        
         name = n;
         RollN = roll;
         marks[0] = m1;
         marks[1] = m2;
         marks[2] = m3;
+
     }
     float avergae()
     {
