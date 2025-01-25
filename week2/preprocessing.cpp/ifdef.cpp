@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
+    // this can tell before compiling if it is true or not 
     #ifdef HELLO
         cout << "it is defined ";
     #else
@@ -21,3 +22,27 @@ int main()
 
     return 0;
 }
+// #include <iostream>
+// using namespace std;
+
+// // Using preprocessor directive
+// #define HELLO
+
+// int main() {
+//     // Version 1: Using preprocessor directives
+//     #ifdef HELLO
+//         cout << "HELLO is defined" << endl;
+//     #else
+//         cout << "HELLO is not defined" << endl;
+//     #endif
+
+//     // Version 2: Using regular if-else
+//     bool isHelloDefined = true;
+//     if (isHelloDefined) {
+//         cout << "HELLO is defined" << endl;
+//     } else {
+//         cout << "HELLO is not defined" << endl;
+//     }
+
+//     return 0;
+// }
