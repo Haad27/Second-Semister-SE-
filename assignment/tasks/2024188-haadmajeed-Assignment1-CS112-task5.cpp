@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-//decalrinf enum struct
+
 struct Address {
     int zip_code;
     string city;
@@ -43,7 +43,7 @@ int main() {
             break;
         default:
             cout << "Error: Incorrect input. Please enter 1, 2, or 3.\n";
-            return 1; 
+            return 1; // Exit the program if input is invalid
     }
 
     cout << "Enter Employee ID: "; 

@@ -11,8 +11,8 @@ struct timetable
     int sec;
 };
 
-void printmiliatey(timetable);
-void printcasual(timetable);
+void printmiliatey(timetable t);
+void printcasual(timetable t);
 int main()
 {
 

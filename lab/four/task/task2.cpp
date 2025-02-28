@@ -64,7 +64,7 @@ int main()
     students.set(" ahmed", 2, 80);
     students.grade();
 
-    students.set(" ahmed", 2, 800);
+    students.set(" John ", 9, 800);
     students.grade();
 
     return 0;
