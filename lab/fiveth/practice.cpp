@@ -3,31 +3,35 @@
 #include <vector>
 
 using namespace std;
-
-class Student
+int count=0;
+class num
 {
-private:
-    int rollno;
-    int age;
-    string name;
 public:
-    Student(int rollno, int age, string name)
+    num()
     {
-        this->rollno = rollno;
-        this->age = age;
-        this->name = name;
-    };
-    void display()
+        count++;
+        cout << "this is the time counstructor is called for the object " << count << endl;
+    }
+    ~num()
     {
-        cout << "Roll no: " << rollno << endl;
-        cout << "Age: " << age << endl;
-        cout << "Name: " << name << endl;
+        cout << "this is the time disctructor is called for the object " << count << endl;
+        count--;
     }
 };
-int main()
+
+main()
 {
-    Student s1(1, 20, "John");
-    s1.display();
+    cout << "we are inside our main function " << endl;
+    cout << "creating first object " << endl;
+
+    num n1;
+    {
+    cout <<"entering the block "<<endl <<"creating tewo objects\n";
+    num n2,n3;
+    cout <<"exiting the block\n";
+    };
+
+    cout <<"back to main\n";
 
     return 0;
 }
