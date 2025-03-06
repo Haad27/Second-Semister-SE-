@@ -1,3 +1,4 @@
+# making class and function of students
 class Student:
     def __init__(self, name, grade , roll_number):
         self.name = name
@@ -6,7 +7,7 @@ class Student:
     def printstudents(self):
          print(f"\n Student Name : {self.name} \n Grade: {self.grade}\n roll_number : {self.roll_number} \n\n")
          
-         
+#    output   
 stundent1=Student("haad", "C", 123)
 stundent1.printstudents()
 stundent2=Student("ali", "B", 124)

@@ -1,6 +1,6 @@
 class BankAccount:
     def __init__(self,balance):
-        self.balance=balance
+         self.__balance=balance #  now this is privabel to make it protected we will use single _
     def deposit(self,amount):
         self.balance += amount
         print(f"Deposited {amount}. New balance: {self.balance}")

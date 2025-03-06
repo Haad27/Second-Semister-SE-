@@ -4,6 +4,7 @@ class CakeFactory:
         self.size = size
     def value(self):
         print(f"the cake flavour is {self.falvour} and size is {self.size}")
+        
 cake1 = CakeFactory("brown" , 23)
 cake1.value()
 cake2 = CakeFactory ("white ", 34)
