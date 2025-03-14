@@ -10,9 +10,19 @@ class Bird(Animal, Flyable):    # Multiple inheritance from both Animal and Flya
     def chirp(self):
         print("This bird chirps")
 
+class seed():
+    def eat(self):
+        print("This seed eats seeds")
+
+
 # Create a bird instance
 parrot = Bird()
 parrot.eat()    # Inherited from Animal
 parrot.fly()    # Inherited from Flyable
 parrot.chirp()  # Bird's own method
+
+
+
+
+
 

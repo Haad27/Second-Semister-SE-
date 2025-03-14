@@ -1,17 +1,23 @@
+# Base class
+# having diffrenet classes but are inheriting one same base class
 class Animal:
-    def eat(self):
-        print("This animal eats food")
+    def speak(self):
+        return "Animal sound"
 
-class Dog(Animal):  # Inheritance from Animal
-    def bark(self):
-        print("The dog barks")
+# Derived class from Animal
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
 
-class Labrador(Animal):  # Inheritance from Dog
-    def fetch(self):
-        print("The labrador fetches")
+# Another derived class from Animal
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
 
+# Create instances of Dog and Cat
+dog = Dog()
+cat = Cat()
 
-labrador = Labrador()
-labrador.eat()
-labrador.bark()
-labrador.fetch()
+# Access the speak method from each class
+print(dog.speak())  # Outputs: Woof!
+print(cat.speak())  # Outputs: Meow!

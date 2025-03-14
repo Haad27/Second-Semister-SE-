@@ -1,10 +1,11 @@
+# calling the function having as a pramter two classes
 class vehicle:
     def vehicle_info(self):
         print("inside vehivle classs")
 class car(vehicle):
     def car_info(self):
      print("inside car class")
-class sportcar(car):
+class sportcar(car,vehicle):
     def sports_car_info(self):
         print("inside sports car")
 s_car = sportcar()

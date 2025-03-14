@@ -19,8 +19,4 @@ employee = Employee("Sara", 50000)
 
 employee.display_details()
 
-salary_details = employee.get_salary()
-print("\nUsing get_salary method:")
-print(f"Salary: {salary_details['salary']}")
-print(f"Bonus: {salary_details['bonus']}")
 

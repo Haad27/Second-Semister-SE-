@@ -1,0 +1,8 @@
+[
+    // ...existing code...
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    }
+    // ...existing code...
+]
