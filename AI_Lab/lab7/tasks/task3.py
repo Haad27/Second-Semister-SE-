@@ -3,7 +3,7 @@ class Box:
     def __init__(self, volume):
         self.volume = volume
 
-    def __neg__(self, other):
+    def __add__(self, other):
         # Add the volumes of two Box objects
         return Box(self.volume + other.volume)
 
