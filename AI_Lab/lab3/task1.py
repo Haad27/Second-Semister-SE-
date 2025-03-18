@@ -2,7 +2,7 @@
 
 chocolate = ["dailymilk ", "perk", "kitkat"]
 chocolate.append("munch")
-# print(chocolate)
+print(chocolate)
 
 chocolates = {"first": "kitkat",
               "second" : "dailymilk",
@@ -18,4 +18,5 @@ chocolates["fifth"] = "snickers"
 # print(chocolate["fivth"])
 
 for i in chocolates:
-    print(chocolate[i])
+    print(i)
+    print(chocolates[i])
