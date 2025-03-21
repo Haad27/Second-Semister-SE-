@@ -18,6 +18,5 @@ def process_score(students):
     
     for student in students:
         print(student)
-        print(students(student))
 
 process_score(sent)

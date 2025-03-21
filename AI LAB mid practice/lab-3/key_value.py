@@ -5,5 +5,4 @@ my_dict = {
     "banana": "A long yellow fruit"
 }
 
-print(my_dict.keys())
-print(my_dict.values())
+print(my_dict["apple"])

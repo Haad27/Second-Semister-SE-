@@ -12,3 +12,9 @@ def diffrence(x):
     
 y=diffrence(x)
 print(y)
+
+# x = [3, 10, 6, 2, 8]
+
+# max_diff = max(x) - min(x)
+
+# print(max_diff)  # Output: 8
