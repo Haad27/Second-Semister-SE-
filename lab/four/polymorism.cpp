@@ -28,7 +28,9 @@ class Animal {
   };
 int main() {
   
+  Dog dog;
+  dog.animalSound();
 
-  
+
     return 0;
 }
