@@ -1,4 +1,4 @@
-text = "Enter a string: hello world how are you a"
+text = input("Enter a string: ")
 
 position = text.find("a")
 new_text = text.replace("a", "b")

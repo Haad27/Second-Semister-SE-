@@ -7,6 +7,7 @@ using namespace std;
 int main() {
     int row;
     int col;
+  
     
     // Prompt the user to enter the number of rows
     cout << "Enter the number of rows: ";

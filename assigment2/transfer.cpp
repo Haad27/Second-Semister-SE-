@@ -43,7 +43,6 @@ class account {
 };
 
 int main() {
-  account a[2];
   int account,balance ;
   
   string name;
@@ -51,7 +50,7 @@ int main() {
   {
     cout << "entername balance and account\n";
     cin >> name >> balance >> account;
-    a[i] = account(name, balance, account);
+    account a[i] (name, balance, account);
   }
   cout << "do you want to tranfer\n";
   cout <<"enter you account number";

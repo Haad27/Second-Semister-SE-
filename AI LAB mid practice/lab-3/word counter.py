@@ -11,3 +11,4 @@ for i in word :
 
 
 print(book)
+for i in word :
