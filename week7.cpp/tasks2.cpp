@@ -71,7 +71,7 @@ int main() {
 
     Truck myTruck(8, 12500, 2, 16000);
     cout << "The trailer's weight " << myTruck.get_weight() << " kg.\n";
-    cout << "The trailer’s efficiency is " << myTruck.calculate_efficiency() << " % (Note: efficiency is in percentage)\n";
+    cout << "The trailer’s efficiency is " << myTruck.calculate_efficiency() ;
 
     return 0;
 }
