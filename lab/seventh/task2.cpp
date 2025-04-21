@@ -11,22 +11,20 @@ public:
         text = x;
     }
 
-    // Overload equality operator
+    // using operator overiding bool to check if it is equal to less than or greater than 
     bool operator==(const Text& t) {
         return text == t.text;
     }
 
-    // Overload less-than operator
     bool operator<(const Text& t) {
         return text < t.text;
     }
 
-    // Overload greater-than operator
     bool operator>(const Text& t) {
         return text > t.text;
     }
 
-    // Concatenate with another Text object
+    //adding boht the text combining them both
     Text operator+(const Text& t) {
         return Text(text + t.text);
     }
@@ -48,7 +46,7 @@ int main() {
 
     Text text1(sentence1);
     Text text2(sentence2);
-
+    //calling those operator
     if (text1 == text2) {
         cout << "Both sentences are the same.\n";
     } else if (text1 < text2) {
@@ -59,7 +57,7 @@ int main() {
 
     // Concatenate and display
     Text text3 = text1 + text2;
-    cout << "Concatenated result: " << text3.display() << endl;
+    cout << "result: " << text3.display() << endl;
 
     return 0;
 }
