@@ -1,27 +1,17 @@
-#  you have mulitple classes  and youu are usong one function to call all those classes is i called polymorism
-
 class Animal:
     def speak(self):
-        pass
+        return "The animal makes a sound"
 
 class Dog(Animal):
     def speak(self):
-        return "Woof!"
+        return "The dog barks"
 
 class Cat(Animal):
     def speak(self):
-        return "Meow!"
+        return "The cat meows"
 
-def animal_sound(animal: Animal):
+# Polymorphism in action
+animals = [Dog(), Cat(), Animal()]
+
+for animal in animals:
     print(animal.speak())
-    
-
-
-
-# Create instances of Dog and Cat
-dog = Dog()
-cat = Cat()
-
-# Call the animal_sound function with different types of animals
-animal_sound(dog)  # Outputs: Woof!
-animal_sound(cat)  # Outputs: Meow!

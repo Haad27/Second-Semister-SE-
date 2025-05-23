@@ -10,7 +10,7 @@ int main()
     map<string, string> mp;
 
     mp["haad"] = "9233355544";
-    mp["ali"] = "9213632554";5
+    mp["ali"] = "9213632554";
     
     mp["ahmed"] = "9231353666";
 

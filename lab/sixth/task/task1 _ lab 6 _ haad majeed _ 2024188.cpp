@@ -21,8 +21,10 @@ public:
     // using getter and setter to get vale and returnhem as well
     void setNumbers(int f, int s)
     {
+        
         a = f;
         b = s;
+
     }
     int getFirst()
     {
